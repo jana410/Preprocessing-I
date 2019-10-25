@@ -1,1 +1,321 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background: black;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+  background: #ca6d9c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+}
+header {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-evenly;
+  background: #ca6d9c;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  flex-direction: row;
+  padding: 10px;
+  width: 50%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+header nav a {
+  color: purple;
+  text-decoration: none;
+  background: pink;
+  border: 2px solid purple;
+  border-radius: 20%;
+  padding: 20px;
+  font-family: "Baloo", cursive;
+  margin-right: 0px;
+  float: left;
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-evenly;
+  flex-direction: row;
+}
+.thanos {
+  width: 90%;
+  background: pink;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  border: 10px double purple;
+  flex-wrap: wrap;
+}
+.thanos .about-thanos {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  border-bottom: 5px solid purple;
+}
+.thanos .about-thanos .thanos-img-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: left;
+  width: 40%;
+  padding-left: 20px;
+}
+.thanos .about-thanos .thanos-img-container .thanos-img {
+  height: 400px;
+}
+.thanos .about-thanos .thanos-web-dev {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.thanos .about-thanos .thanos-web-dev h1 {
+  font-size: 70px;
+  font-family: "Lobster", cursive;
+  color: #85134c;
+  padding-bottom: 20px;
+}
+.thanos .about-thanos .thanos-web-dev p {
+  font-family: "Source Code Pro", monospace;
+  background: #f184f1;
+  padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 45%;
+}
+.thanos .occasionally-container {
+  padding-top: 20px;
+  width: 95%;
+  font-family: "Cinzel", serif;
+  font-size: 25px;
+  padding-left: 40px;
+}
+.thanos .occasionally-container .btn-container {
+  width: 50%;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+.thanos .occasionally-container .btn-container .team-up {
+  width: 100%;
+  height: 44px;
+  font-size: 20px;
+  background: #85134c;
+  color: pink;
+  border: 5px double pink;
+}
+.thanos .occasionally-container .btn-container .team-up:hover {
+  background: #8f487d;
+  cursor: pointer;
+}
+.listen-up-container {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-content: center;
+  width: 100%;
+}
+.listen-up-container .listen-up {
+  background: pink;
+  margin: 0 auto;
+  padding: 15px;
+  border: 10px double purple;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-content: center;
+}
+.listen-up-container .listen-up h2 {
+  font-size: 36px;
+  padding: 10px;
+  font-family: "Lobster", cursive;
+  color: #5e1d38;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 5px ridge purple;
+}
+.listen-up-container .listen-up p {
+  font-size: 23px;
+  padding: 20px;
+  font-family: "Amaranth", sans-serif;
+}
+.listen-up-container .skills-container {
+  background: pink;
+  margin: 0 auto;
+  padding: 15px;
+  border: 10px double purple;
+  width: 40%;
+}
+.listen-up-container .skills-container .skills h2 {
+  font-size: 36px;
+  padding: 10px;
+  font-family: "Lobster", cursive;
+  color: #5e1d38;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 5px ridge purple;
+}
+.listen-up-container .skills-container .skills .list {
+  padding: 20px;
+}
+.listen-up-container .skills-container .skills .list p {
+  font-size: 23px;
+  padding: 10px;
+  font-family: "Amaranth", sans-serif;
+  border: 2px solid palevioletred;
+}

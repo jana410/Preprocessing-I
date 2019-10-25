@@ -4,56 +4,370 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  background: black;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
+.content {
+  //background: pink;
+  width: 90%;
+  margin: 0 auto;
+  background: rgb(202, 109, 156);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+header {
+  //background: red;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-evenly;
+  background: rgb(202, 109, 156);
+
+  nav {
+    // background: green;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-direction: row;
+    padding: 10px;
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    a {
+      color: purple;
+      text-decoration: none;
+      background: pink;
+      border: 2px solid purple;
+      border-radius: 20%;
+      padding: 20px;
+      font-family: "Baloo", cursive;
+      margin-right: 0px;
+      float: left;
+      display: flex;
+      justify-content: flex-end;
+      align-content: space-evenly;
+      flex-direction: row;
+    }
+  }
+}
+
+.thanos {
+  width: 90%;
+  background: pink;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: row;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  border: 10px double purple;
+  // border-radius: 3%;
+  flex-wrap: wrap;
+
+  .about-thanos {
+    //background: green;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    //background: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    border-bottom: 5px solid purple;
+
+    .thanos-img-container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin: left;
+      //background: green;
+      width: 40%;
+      padding-left: 20px;
+
+      .thanos-img {
+        height: 400px;
+        //width: 100%;
+        //border: 10px groove rgb(218, 104, 218);
+        //border-radius: 4%;
+      }
+    }
+
+    .thanos-web-dev {
+      //background: red;
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      h1 {
+        font-size: 70px;
+        font-family: "Lobster", cursive;
+        color: rgb(133, 19, 76);
+        padding-bottom: 20px;
+      }
+
+      p {
+        font-family: "Source Code Pro", monospace;
+        background: rgb(241, 132, 241);
+        padding: 20px;
+        width: 60%;
+        margin: 0 auto;
+        border-radius: 45%;
+      }
+    } //end of  .thanos-web-dev
+  }
+
+  .occasionally-container {
+    //background: red;
+    padding-top: 20px;
+    //padding-bottom: 30px;
+    width: 95%;
+    font-family: "Cinzel", serif;
+    font-size: 25px;
+    padding-left: 40px;
+
+    .btn-container {
+      //background: black;
+      width: 50%;
+      text-align: center;
+      padding-top: 35px;
+      padding-bottom: 15px;
+      margin: 0 auto;
+
+      .team-up {
+        width: 100%;
+        height: 44px;
+        font-size: 20px;
+        background: rgb(133, 19, 76);
+        color: pink;
+        border: 5px double pink;
+      }
+      .team-up:hover {
+        background: rgb(143, 72, 125);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.listen-up-container {
+  //background: rgb(202, 109, 156);
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-content: center;
+  width: 100%;
+  //background: red;
+
+  .listen-up {
+    background: pink;
+
+    margin: 0 auto;
+    padding: 15px;
+    border: 10px double purple;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+    //border-radius: 10%;
+
+    h2 {
+      font-size: 36px;
+      padding: 10px;
+      font-family: "Lobster", cursive;
+      color: rgb(94, 29, 56);
+      //background: red;
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+      border-bottom: 5px ridge purple;
+    }
+
+    p {
+      font-size: 23px;
+      //21`	background: palevioletred;
+      padding: 20px;
+      font-family: "Amaranth", sans-serif;
+    }
+  }
+
+  .skills-container {
+    background: pink;
+
+    margin: 0 auto;
+    padding: 15px;
+    border: 10px double purple;
+    width: 40%;
+
+    .skills {
+      //background: red;
+
+      h2 {
+        font-size: 36px;
+        padding: 10px;
+        font-family: "Lobster", cursive;
+        color: rgb(94, 29, 56);
+        //background: red;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        border-bottom: 5px ridge purple;
+      }
+
+      .list {
+        padding: 20px;
+        p {
+          font-size: 23px;
+          //background: palevioletred;
+          padding: 10px;
+          font-family: "Amaranth", sans-serif;
+          border: 2px solid palevioletred;
+        }
+      }
+    }
+  }
+} //end of listen up container
