@@ -143,6 +143,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-content: space-between;
+  padding-bottom: 60px;
 }
 header {
   padding-bottom: 10px;
@@ -318,4 +319,52 @@ header nav a {
   padding: 10px;
   font-family: "Amaranth", sans-serif;
   border: 2px solid palevioletred;
+}
+.listen-up-container .skills-container .skills .list p:hover {
+  background: #5e1d38;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  text-align: center;
+}
+.work-history {
+  border: 10px double purple;
+  width: 95%;
+  margin: 0 auto;
+  padding: 30px;
+  background: pink;
+}
+.work-history h2 {
+  font-size: 36px;
+  padding: 10px;
+  font-family: "Lobster", cursive;
+  color: #5e1d38;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.work-history .table {
+  border: 2px solid palevioletred;
+  width: 100%;
+}
+.work-history .table .thead {
+  border: 4px groove palevioletred;
+  background: #5e1d38;
+  color: pink;
+  font-family: "Lobster", cursive;
+}
+.work-history .table .thead .th {
+  border: 2px solid palevioletred;
+}
+.work-history .table .tbody {
+  background: pink;
+  text-align: center;
+}
+.work-history .table .tbody .tr {
+  border: 2px solid palevioletred;
+}
+.work-history .table .tbody .tr .td {
+  border: 2px solid palevioletred;
+  font-family: "Amaranth", sans-serif;
 }

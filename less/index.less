@@ -149,6 +149,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-content: space-between;
+  padding-bottom: 60px;
 }
 
 header {
@@ -367,7 +368,67 @@ header {
           font-family: "Amaranth", sans-serif;
           border: 2px solid palevioletred;
         }
+
+        p:hover {
+          background: rgb(94, 29, 56);
+          color: white;
+          cursor: pointer;
+          font-size: 25px;
+          text-align: center;
+        }
+      }
+    }
+  } //end of skills container
+} //end of listen up container
+
+.work-history {
+  border: 10px double purple;
+  width: 95%;
+  margin: 0 auto;
+  padding: 30px;
+  background: pink;
+
+  h2 {
+    font-size: 36px;
+    padding: 10px;
+    font-family: "Lobster", cursive;
+    color: rgb(94, 29, 56);
+    //background: red;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  .table {
+    //background: red;
+    border: 2px solid palevioletred;
+    width: 100%;
+
+    .thead {
+      border: 4px groove palevioletred;
+      background: rgb(94, 29, 56);
+      color: pink;
+      font-family: "Lobster", cursive;
+
+      .th {
+        border: 2px solid palevioletred;
+      }
+    }
+
+    .tbody {
+      //border: 2px solid green;
+      background: pink;
+      text-align: center;
+
+      .tr {
+        border: 2px solid palevioletred;
+
+        .td {
+          border: 2px solid palevioletred;
+          font-family: "Amaranth", sans-serif;
+        }
       }
     }
   }
-} //end of listen up container
+} // end of work history
